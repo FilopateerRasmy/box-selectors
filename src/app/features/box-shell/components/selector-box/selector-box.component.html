@@ -1,0 +1,5 @@
+<div class="selector-box-wrpper border-round-2xl flex justify-content-center align-items-center cursor-pointer" 
+[ngClass]="{'bg-primary':!(isSelected | async), 'bg-yellow-500':isSelected | async}"
+#box> 
+    {{boxData.value || 'Select element'}}
+</div>
